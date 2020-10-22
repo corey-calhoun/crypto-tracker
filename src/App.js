@@ -1,8 +1,8 @@
-import React from 'react';
+import { FormControl, Select } from '@material-ui/core';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 // components 
-import Header from './components/Header/Header';
 
 function App() {
   return (
@@ -10,6 +10,12 @@ function App() {
       <div className="app__left">
         <div classNane="app__header">
           <h1>Tracker App</h1>
+          <FormControl className="app__dropdown"/>
+            <Select 
+              variant="outlined"
+              value="{}"
+              onChange="{}"
+            />
         </div>
       </div>
 
